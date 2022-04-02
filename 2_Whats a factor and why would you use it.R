@@ -32,3 +32,9 @@ levels(factor_survey_vector) <- c("Female", "Male")
 
 # Print out factor_survey_vector
 factor_survey_vector
+
+# Generate summary for survey_vector
+summary(survey_vector)
+
+# Generate summary for factor_survey_vector
+summary(factor_survey_vector)
