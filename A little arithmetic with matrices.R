@@ -38,7 +38,12 @@ new_ticket_prices_matrix <- matrix(new_ticket_prices,
                                    nrow = 6, byrow = TRUE,
                                    dimnames = list(moviesNames, countryNames))
 
+# Estimated numbers of visitors
 new_visitors <- all_wars_matrix / new_ticket_prices_matrix
 
-US_visitors <- new_visitors[2:4,]
+# US visitors
+US_visitors <- new_visitors[,1]
+
+# Average number of US visitors
+mean(US_visitors)
 
